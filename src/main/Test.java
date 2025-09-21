@@ -12,6 +12,7 @@ public class Test {
 		catalogo.agregar(new Ejercicio("Aperturas con mancuernas", "Pecho", 3, 10, 12, 15));
 		catalogo.agregar(new Ejercicio("Curl Bíceps", "Biceps", 3, 10, 12, 20));
 		catalogo.agregar(new Ejercicio("Sentadilla", "Cuadriceps", 4, 5, 8, 80));
+		System.out.println("=== Listado de Ejercicios ===");
 		for (Ejercicio e : catalogo.listarEjercicios()) {
 			System.out.println("- " + e.getNombre() + " | Grupo: " + e.getGrupo() + " | " + e.getSeries() + "x "
 					+ e.getRepMin() + "/" + e.getRepMax() + " | Peso recomendado: " + e.getPesoRecomendado() + "kg");
